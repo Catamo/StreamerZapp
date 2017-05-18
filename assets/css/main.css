@@ -1,0 +1,119 @@
+@import url(template-main.css);
+
+body {
+  min-height: 100vh;
+}
+
+.no-streamers {
+  background-image: url(../../images/Glitch_Not_Found.png);
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: center;
+}
+
+.no-streamers-to-show {
+  background-image: url(../../images/Glitch_No_Streamers_To_Show.png);
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.no-image, .doesnt-exist {
+  background-size: 30% !important;
+  background-position: center !important;
+}
+
+#main .thumb > .image {
+  background-position: top;
+}
+
+i.online {
+  color: rgba(0, 255, 0, 0.6);
+}
+
+i.offline {
+  color: rgba(255, 0, 0, 0.6);
+}
+
+.poptrox-popup .hideonpop {
+  display: none !important;
+}
+
+.poptrox-popup .caption, .poptrox-popup .caption .hideoffpop {
+  display: block !important;
+}
+
+@media screen and (min-width: 736px) {
+
+  .hideoffpop {
+    display: none;
+  }
+
+  .poptrox-popup {
+    min-width: 600px !important;
+  }
+
+  .poptrox-popup .pic {
+    min-width: 600px;
+    text-align: left;
+  }
+
+  .poptrox-popup .pic img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 50%;
+  }
+
+  .poptrox-popup .caption .info {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: -233px;
+    height: 300px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .no-streamers {
+    background-size: 30%;
+  }
+
+  .no-streamers-to-show {
+    background-size: 30%;
+  }
+
+  #header h1 {
+    display: none;
+  }
+
+  .poptrox-popup {
+      top: 0;
+      left: 0;
+      right: 0;
+      position: absolute !important;
+    min-height: 100vh !important;
+    min-width: 100vw !important;
+  }
+
+    .poptrox-popup .pic img {
+      min-width: 300px;
+    }
+
+    .poptrox-popup .caption {
+        top: 300px !important;
+        display: block !important;
+    }
+
+    .poptrox-popup .closer {
+        display: block !important;
+    }
+
+}

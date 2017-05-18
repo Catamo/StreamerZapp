@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!--
+	Multiverse by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>TwitchZAPP | Victor Catamo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><strong>TwitchZAPP</strong> <a href="http://catamo.github.io">by Victor Catamo</a></h1>
+						<nav>
+							<ul>
+								<li><a href="#footer" id="btnMore" class="icon fa-info-circle">More</a></li>
+								<li><a>Filter:</a></li>
+								<li><a href="#" class="btnFilter" data-filter="online"><i class="icon fa-circle online"></i></a></li>
+								<li><a href="#" class="btnFilter" data-filter="offline"><i class="icon fa-circle offline"></i></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- <article class="thumb">
+							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
+							<h2>Magna feugiat lorem</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article> -->
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer" class="panel">
+						<div class="inner split">
+							<div>
+								<!-- <section>
+									<h2>Magna feugiat sed adipiscing</h2>
+									<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
+								</section> -->
+								<section>
+									<h2>More about me</h2>
+									<ul class="icons">
+										<li><a href="http://github.com/Catamo" class="icon fa-github"><span class="label">Github</span></a></li>
+										<li><a href="https://codepen.io/CasacaDyn" class="icon fa-codepen"><span class="label">Codepen</span></a></li>
+										<li><a href="https://www.linkedin.com/in/victor-catamo-rojas/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="mailto:victor@chvre.co" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									</ul>
+								</section>
+								<p class="copyright">
+									&copy; <a href="http://catamo.github.io">Victor Catamo</a>. Design based on Multiverse <a href="http://html5up.net">@HTML5UP</a>.
+								</p>
+							</div>
+							<div>
+								<section>
+									<h2>Add Watch on Twitch User</h2>
+									<form method="post" action="#">
+										<div class="field">
+											<input type="text" name="username" required id="username" placeholder="Twitch username..." />
+										</div>
+										<ul class="actions">
+											<li><input type="submit" title="Add Watch to a Twitch user" value="Watch" class="special" /></li>
+											<li><input type="reset" value="Clear input" /></li>
+										</ul>
+									</form>
+									<hr />
+									<ul class="actions">
+										<li><a class="button" title="Refresh" id="btnRefresh"><i class="fa fa-refresh"></i> Last Refresh</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a class="button" title="Delete all erroneous items" id="btlDelErrors"><i class="fa fa-trash-o"></i> Delete All Errors</a></li>
+										<li><a class="button" title="Reset all values to default" id="btnResetDefault"><i class="fa fa-power-off"></i> Reset to Default</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</footer>
+
+			</div>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
+			<script id="streamer-template" type="text/x-handlebars-template">
+				{{#each streamers}}
+					<article class="thumb text-center {{iconClass}}">
+						<a href="{{logo}}" class="image {{cssClass}}"><img class="test" src="{{logo}}" alt="" /></a>
+						<h2 class="hideonpop"><i class="fa fa-circle {{iconClass}}"></i> {{display_name}}</h2>
+						<div class="hideoffpop">
+							<h2><i class="fa fa-circle {{iconClass}}"></i> {{display_name}}</h2>
+							<div class="info">
+								<a href="{{url}}" target="_blank" class="button"><i class="fa fa-link"></i></a>
+								<a data-key="{{key}}" class="button delete ignore"><i class="fa fa-eye-slash"></i> Unwatch</a>
+								<hr />
+								{{#if isOnline}}
+									<h3><i>Currently streaming</i></h3>
+									<p>{{status}}</p>
+								{{else}}
+									<h3><i>Offline</i></h3>
+								{{/if}}
+							</div>
+					</div>
+					</article>
+				{{/each}}
+			</script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/app.js"></script>
+
+	</body>
+</html>
