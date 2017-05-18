@@ -8,7 +8,7 @@ $(function() {
   const HTML_SPINNER = "<i class='fa fa-circle-o-notch fa-spin'></i>";
   const initalStreamersObj = { streamers: ["freecodecamp"] };
 
-  const urlTwitchChannels = 'http://wind-bow.glitch.me/twitch-api/channels/';
+  const urlTwitchChannels = 'https://wind-bow.glitch.me/twitch-api/channels/';
   const urlTwitchStreams = 'https://wind-bow.glitch.me/twitch-api/streams/';
 
   var streamers = [];
